@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <title>Contact Us - Warhammer 40k Lore</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid ">
+                <a class="navbar-brand text-gold" href="index.html">Library Sanctus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="horus-heresy.html">Horus Heresy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="xenos-races.html">Xenos Races</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galactic-history.html">Galactic History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch with the Inquisition</h2>
+            <p>For matters of heresy, xenos infiltration, or general inquiries about the grim darkness of the future, reach out to the Holy Inquisition.</p>
+          
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" title="Contact form" class="was-validated">
+              <div class="mb-3">
+                <label for="alias" class="form-label">Inquisitorial Alias: (Name)</label>
+                <input type="text" class="form-control" id="alias" name="alias" required>
+                <div class="valid-feedback">Validatorus.</div>
+                <div class="invalid-feedback">Fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Ordo-approved   
+           Vox-Communicator Address: (E-mail)</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="valid-feedback">Validatorus.</div>
+                <div class="invalid-feedback">Fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="comment" class="form-label">Inquiry   
+           Scroll (message)</label>
+                <textarea class="form-control" id="comment" name="comment" rows="6"></textarea>
+                <div class="valid-feedback">Validatorus.</div>
+                <div class="invalid-feedback">Fill out this field.</div>
+              </div>
+              <div class="mb-3">
+                <label for="faction" class="form-label">Your Faction Affiliation</label>
+                <select class="form-select" id="faction" name="faction">
+                  <option value="imperium">Imperium of Man</option>
+                  <option value="chaos">Chaos Undivided</option>
+                  <option value="xenos">Xenos</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="chaosGodInfluence" class="form-label">Dominant Chaos God Influence</label>
+                <select class="form-select" id="chaosGodInfluence" name="chaosGodInfluence">
+                  <option value="nurgle">Nurgle</option>
+                  <option value="khorne">Khorne</option>
+                  <option value="tzeentch">Tzeentch</option>
+                  <option value="slaanesh">Slaanesh</option>
+                  <option value="undetermined">Undetermined</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="warpStormSeverity" class="form-label">Warp Storm Severity in region</label>
+                <select class="form-select" id="warpStormSeverity" name="warpStormSeverity">
+                  <option value="minor">Minor</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="major">Major</option>
+                  <option value="extreme">Extreme</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="astartesChapter" class="form-label">Astartes Chapter Affiliation in region</label>
+                <select class="form-select" id="astartesChapter" name="astartesChapter">
+                  <option value="ultramarines">Ultramarines</option>
+                  <option value="darkAngels">Dark Angels</option>
+                  <option value="spaceWolves">Space Wolves</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="hereticalCultActivity" class="form-label">Heretical Cult Activity</label>
+                <textarea class="form-control" id="hereticalCultActivity" name="hereticalCultActivity" rows="4"></textarea>
+              </div>
+          
+              <div class="mb-3">
+                <label for="warzoneDescription" class="form-label">Warzone Description</label>
+                <textarea class="form-control" id="warzoneDescription" name="warzoneDescription" rows="6"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="image" class="form-label">Evidence (Image)</label>
+                <input type="file" class="form-control" id="image" name="image">
+              </div>
+              <button type="submit" class="btn btn-primary">Transmit Inquiry to the Inquisition</button>
+            </form>
+
+            <p></p>
+            <p>For a direct Vox link message</p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXFBVQxrrXVmtQsfGmMpTHCccPHxmhxNSmNpHGZvRJlQNjGZglmBZFJVtHcDcQBVzgQzr" target="_blank" ><span>Email:</span> amela.vatres@stu.ibu.edu.ba</a>
+
+            <div class="bg-black"></div>
+            <div class="card">
+                <div class="card-header text-center"><img src="emperor.jpg" alt="Emperor of Mankind"></div>
+                <div class="card-body">
+                  <h2 class="card-text"><b>God-Emperor<b></h2>
+                </div>
+                <div class="card-footer text-center"><h3>The Emperor protects.</h3></div>
+              </div>
+          </section>
+    </main>
+    
+    <footer>
+        <h4>Faris Sačić</h4> 
+        <p>Foundations of Web Development</p>
+        <p>© 2024 Library Sanctus - The Inquisition Awaits Your Inquiry</p>
+    </footer>
+</body>
+</html>
