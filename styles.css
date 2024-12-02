@@ -1,0 +1,152 @@
+body {
+    font-family: 'Frank Ruhl Libre', serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #ffd700;
+}
+
+header {
+    background-color: #000; /* Crna pozadina zaglavlja */
+    color: #ffd700; /* Zlatna boja teksta */
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid #ffd700; /* Zlatna ivica ispod zaglavlja */
+}
+
+nav {
+    background-color: #1a1a1a; /* Tamna pozadina navigacije */
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    display: block;
+    color: #ffd700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #000; /* Tamnija pozadina na hover-u */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide items on mobile by default */
+    }
+
+    nav .toggle-button {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    nav ul.active {
+        display: flex; /* Show nav items when active */
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add spacing between items in mobile view */
+    }
+}
+
+main {
+    padding: 20px;
+}
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contact-form label {
+    display: block;
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.contact-form select,
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #ffd700;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .captcha {
+    margin-bottom: 16px;
+}
+
+.contact-form button {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+}
+.card{
+    background-color: #1a1a1a;
+    padding-top: 20px;
+}
+
+.responsive-iframe {
+    display: block;
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  
+  .responsive-iframe iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+footer {
+    color: #ffd700;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #ffd700; /* Zlatna ivica iznad podnožja */
+}
+
+
